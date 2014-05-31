@@ -1,0 +1,28 @@
+GIT
+  remote: git://github.com/rubymotion/motion-kit.git
+  revision: 7fd5eca2a7f77389aa162ba9466584b722c7b764
+  specs:
+    motion-kit (0.10.1)
+      dbt
+
+PATH
+  remote: ../ProMotion
+  specs:
+    ProMotion (2.0.0)
+      methadone (~> 1.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dbt (1.1.4)
+    methadone (1.4.0)
+      bundler
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ProMotion!
+  motion-kit!
+  rake
