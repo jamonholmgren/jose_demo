@@ -19,8 +19,8 @@ class CategoriasScreen < PM::Screen
     end
   end
 
-  def select_category(category_name)
-    open CategoryDetailScreen.new(category_name: category_name)
+  def select_category(category)
+    open CategoryDetailScreen.new(category_name: category)
   end
 
 end

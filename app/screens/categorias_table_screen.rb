@@ -2,12 +2,14 @@ class CategoriasTableScreen < PM::TableScreen
 
   def table_data
     [{
-      cells: [{
-        title: "Dunkin' Coffee",
-        subtitle: "10% de descuento en Dunkin' Coffee",
-        action: :select_category,
-        arguments: { category: "Dunkin' Coffee" }
-      }]
+      cells: Categorias.all.map do |c|
+        {
+          title: c.title,
+          subtitle: c.description,
+          action: :select_category,
+          arguments: { category: c }
+        }
+      end
     }]
   end
 
